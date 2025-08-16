@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sadik-apon.github.io/my-website1/sitemap.xml
