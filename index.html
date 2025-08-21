@@ -72,37 +72,9 @@
         <video src="sticker.mp4" autoplay loop muted playsinline preload="auto"
          style="max-width:350px;display:block;">
         </video>
-<audio autoplay loop style="display: none;">
-  <source src="uefa.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
 
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    const audio = document.getElementById('bg-audio');
-
-    const playAudio = () => {
-      audio.play().catch(err => {
-        console.warn("Chrome blocked autoplay. Waiting for user interaction.");
-      });
-    };
-
-    // Try to play immediately
-    playAudio();
-
-    // Fallback: play on first click
-    window.addEventListener('click', playAudio, { once: true });
-  });
-</script>
-
-
-  <span style="-webkit-text-stroke: 1px crimson;text-shadow: 0 0 9px yellow;color:pink;font-size:300%;font-family:arial;display:inline-block;">
+  <span style="-webkit-text-stroke: 1px crimson;text-shadow: 0 0 9px yellow;color:pink;font-size:250%;font-family:arial;display:inline-block;">
     It's time to focus.
-  </span>
-<span style="grid-column:1 / -1;display:block;width:100%;background-color:lightyellow;
-    -webkit-text-stroke: 1px red;color:hotpink;text-align:center;
-    font-size:220%;border: 2px solid black;box-sizing:border-box;text-shadow: 0 0 5px salmon">
-     <!--mark><b style="color:red;-webkit-text-stroke: 1px black;"><u style="color:red;-webkit-text-stroke: 1px black;">Next Match:</u></b></mark><!--Real Madrid (vs) Osasuna -->
   </span>
 </div>
 
@@ -396,6 +368,7 @@ Electromagnetic Induction & Altering Current
 <h6><p style="text-align:center;font-size:200%;color:red;">For more info, Stay connected with us....</p></h6><hr>
 </body>
 </html>
+
 
 
 
