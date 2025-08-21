@@ -76,23 +76,23 @@
   <source src="uefa.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
-  <script>
-    // Ensure autoplay works after user interaction
-    window.addEventListener('DOMContentLoaded', () => {
-      const audio = document.getElementById('bg-audio');
-      const playAudio = () => {
-        audio.play().catch(err => {
-          console.warn("Autoplay blocked. Waiting for user interaction.");
-        });
-      };
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('bg-audio');
 
-      // Try to play immediately
-      playAudio();
+    const playAudio = () => {
+      audio.play().catch(err => {
+        console.warn("Autoplay blocked. Waiting for user interaction.");
+      });
+    };
 
-      // Fallback: play on first click
-      window.addEventListener('click', playAudio, { once: true });
-    });
-  </script>
+    // Try to play immediately
+    playAudio();
+
+    // Fallback: play on first click (only once)
+    window.addEventListener('click', playAudio, { once: true });
+  });
+</script>
 
 
   <span style="-webkit-text-stroke: 1px crimson;text-shadow: 0 0 9px yellow;color:pink;font-size:300%;font-family:arial;display:inline-block;">
@@ -395,6 +395,7 @@ Electromagnetic Induction & Altering Current
 <h6><p style="text-align:center;font-size:200%;color:red;">For more info, Stay connected with us....</p></h6><hr>
 </body>
 </html>
+
 
 
 
